@@ -2022,12 +2022,14 @@
     "packageJson": {
       "dependencies": [
         "npm:@picocss/pico@^2.0.6",
+        "npm:@prisma/client@^5.21.1",
         "npm:@types/node@20",
         "npm:@types/react-dom@18",
         "npm:@types/react@18",
         "npm:eslint-config-next@14.2.15",
         "npm:eslint@8",
         "npm:next@14.2.15",
+        "npm:prisma@^5.21.1",
         "npm:react-dom@18",
         "npm:react@18",
         "npm:typescript@5"
