@@ -1,0 +1,13 @@
+{
+	"$schema": "https://d.p.v1.dodo.cloud/schemas/gio/app.schema.json",
+	"app": {
+		"type": "nextjs:deno-2.0.0",
+		"ingress": {
+			"network": "Private",
+			"subdomain": "blog",
+			"auth": {
+				"enabled": false
+			}
+		}
+	}
+}
