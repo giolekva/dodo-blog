@@ -1,10 +1,6 @@
 {
 	"$schema": "https://d.p.v1.dodo.cloud/schemas/gio/app.schema.json",
 	"app": {
-		"dev": {
-			"enabled": true,
-			"username": "gio"
-		},
 		"ingress": {
 			"auth": {
 				"enabled": true,
@@ -16,12 +12,16 @@
 				"groups": "pr"
 			},
 			"network": "Private",
-			"subdomain": "dev-blog"
+			"subdomain": "blog"
 		},
 		"type": "nextjs:deno-2.0.0",
 		"postgresql": [{
 			"name": "db",
 			"size": "1Gi"
+		}],
+		"preBuildCommands": [{
+			"bin": "/usr/bin/deno",
+			"args": ["run", "-A", "npm:prisma", "migrate", "dev"]
 		}]
 	}
 }
