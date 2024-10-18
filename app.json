@@ -7,7 +7,12 @@
 		},
 		"ingress": {
 			"auth": {
-				"enabled": true
+				"enabled": true,
+				"noAuthPathPatterns": [
+					"^/_next/.*$",
+					"^/$",
+					"^/entry/.*$"
+				]
 			},
 			"network": "Private",
 			"subdomain": "dev-blog"
