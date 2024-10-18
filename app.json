@@ -7,7 +7,7 @@
 		},
 		"ingress": {
 			"auth": {
-				"enabled": false
+				"enabled": true
 			},
 			"network": "Private",
 			"subdomain": "dev-blog"
