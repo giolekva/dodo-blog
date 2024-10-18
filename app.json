@@ -12,6 +12,10 @@
 			"network": "Private",
 			"subdomain": "dev-blog"
 		},
-		"type": "nextjs:deno-2.0.0"
+		"type": "nextjs:deno-2.0.0",
+		"postgresql": [{
+			"name": "db",
+			"size": "1Gi"
+		}]
 	}
 }
