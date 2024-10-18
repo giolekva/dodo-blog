@@ -1,17 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import "@picocss/pico"
 
 export const metadata: Metadata = {
   title: "dodo - hello nextjs (with dodo)",
@@ -25,8 +13,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className="container">
+        <header>
+          <nav>
+            <ul>
+              <li><strong><a href="/">dodo: Blog!</a></strong></li>
+            </ul>
+            <ul>
+              <li><a href="/create" role="button">Create Entry</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
