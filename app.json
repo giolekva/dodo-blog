@@ -12,7 +12,8 @@
 					"^/_next/.*$",
 					"^/$",
 					"^/entry/.*$"
-				]
+				],
+				"groups": "pr"
 			},
 			"network": "Private",
 			"subdomain": "dev-blog"

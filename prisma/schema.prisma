@@ -17,4 +17,5 @@ model Entry {
   id Int @id @default(autoincrement())
   title String
   contents String
+  author String?
 }
