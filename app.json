@@ -11,7 +11,7 @@
 				],
 				"groups": "pr"
 			},
-			"network": "Private",
+			"network": "Public",
 			"subdomain": "blog"
 		},
 		"type": "nextjs:deno-2.0.0",
