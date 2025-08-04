@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "dotenv -c -- next dev",
     "prebuild": "next telemetry disable",
     "build": "next build",
-    "start": "next start",
+    "start": "dotenv -c -- next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@picocss/pico": "^2.0.6",
     "@prisma/client": "^5.21.1",
+    "dotenv-cli": "^10.0.0",
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18"
